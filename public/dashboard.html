@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>URL Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📊 URL Dashboard</h1>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔍 Search URLs..."
+        >
+
+        <table id="urlTable">
+
+            <thead>
+
+                <tr>
+
+                    <th>Original URL</th>
+
+                    <th>Short URL</th>
+
+                    <th>Clicks</th>
+
+                    <th>Created</th>
+
+                    <th>Actions</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="tableBody">
+
+            </tbody>
+
+        </table>
+
+        <br>
+
+        <a href="/">⬅ Back to URL Shortener</a>
+
+    </div>
+
+    <!-- QR Code Modal -->
+
+    <div id="qrModal" class="modal">
+
+        <div class="modal-content">
+
+            <span id="closeModal">&times;</span>
+
+            <h2>QR Code</h2>
+
+            <img id="qrImage" alt="QR Code">
+
+        </div>
+
+    </div>
+
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>
